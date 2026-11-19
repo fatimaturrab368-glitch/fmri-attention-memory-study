@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Third-party papers are linked in the README, not redistributed
+*.pdf
+
+# Model checkpoints are never written by this project, but guard anyway
+*.pt
+*.ckpt
+
+# Pilot / smoke-test outputs (not part of the reported results)
+results/learning_pilot/
+results/benchmark_smoke/
+
+# Raw console logs (contain local paths; results are in the CSV/JSON files)
+results/benchmark_log.txt

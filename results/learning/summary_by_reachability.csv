@@ -1,0 +1,7 @@
+architecture,group,acc_mean,acc_sd,acc_min,acc_n
+global,reachable,0.9989,0.0018,0.9968,3
+fixed,reachable,1.0,0.0,1.0,3
+fixed,unreachable,0.2499,0.0002,0.2497,3
+shifted,reachable,0.976,0.0246,0.9509,3
+shifted,unreachable,0.2502,0.0002,0.25,3
+none,unreachable,0.25,0.0001,0.2498,3

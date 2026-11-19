@@ -1,0 +1,23 @@
+{
+  "description": "Option C hyper-parameter selection on VALIDATION accuracy only. Tuning seed 100 is never used in the final runs; test accuracy of these runs is not used for any decision.",
+  "architectures": ["global", "fixed", "shifted", "none"],
+  "distances": [1, 8],
+  "seeds": [100],
+  "lr_grid": [0.0003, 0.001, 0.003],
+  "n_tokens": 64,
+  "vocab": 4,
+  "window": 4,
+  "shift": 2,
+  "depth": 4,
+  "d_model": 64,
+  "n_heads": 4,
+  "n_train": 20000,
+  "n_val": 2000,
+  "n_test": 10000,
+  "batch_size": 256,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "warmup_steps": 100,
+  "max_steps": 6000,
+  "eval_every": 250
+}

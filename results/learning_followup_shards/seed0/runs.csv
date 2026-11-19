@@ -1,0 +1,3 @@
+architecture,distance,seed,lr,params,best_step,val_acc,test_acc_all,test_acc_reachable,test_acc_unreachable,n_reachable_positions,n_unreachable_positions,train_time_s,peak_train_mem_mib,device
+shifted,8,0,0.001,204676,15500,0.6268839240074158,0.6252357363700867,1.0,0.25047144293785095,28,28,687.46,444.4,cuda
+shifted,9,0,0.001,204676,7500,0.4434909224510193,0.440567284822464,1.0,0.24954146146774292,14,41,691.54,444.0,cuda

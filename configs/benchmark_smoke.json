@@ -1,0 +1,12 @@
+{
+  "description": "Option B smoke test (fast).",
+  "N": [256, 1024],
+  "windows": [4, 256],
+  "mechanisms": ["global_math", "global_sdpa_flash", "global_sdpa_efficient", "global_sdpa_math", "fixed_window", "shifted_window"],
+  "batch": 1,
+  "heads": 4,
+  "head_dim": 32,
+  "dtype": "float16",
+  "warmup": 3,
+  "repeats": 5
+}

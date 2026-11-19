@@ -1,0 +1,46 @@
+{
+  "config": {
+    "description": "Option B: single-layer attention cores on GPU. Windows of 4 tokens match the reachability study; windows of 256 tokens match the token count of SwiFT's 4x4x4x4 window.",
+    "N": [
+      256,
+      1024,
+      4096,
+      16384,
+      32768
+    ],
+    "windows": [
+      4,
+      256
+    ],
+    "mechanisms": [
+      "global_math",
+      "global_sdpa_flash",
+      "global_sdpa_efficient",
+      "global_sdpa_math",
+      "fixed_window",
+      "shifted_window"
+    ],
+    "batch": 1,
+    "heads": 4,
+    "head_dim": 32,
+    "dtype": "float16",
+    "warmup": 10,
+    "repeats": 40
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "driver": "595.79",
+    "torch": "2.5.1+cu121",
+    "cuda_runtime": "12.1",
+    "python": "3.12.8",
+    "os": "Windows-11-10.0.26200-SP0",
+    "sdpa_backends_available": {
+      "flash": false,
+      "efficient": true,
+      "math": true
+    },
+    "dedicated_vram_bytes": 17170956288,
+    "allocator_memory_fraction": 0.95,
+    "date": "2026-11-19 15:52:36"
+  }
+}

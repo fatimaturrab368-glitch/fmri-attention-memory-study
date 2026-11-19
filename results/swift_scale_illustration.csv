@@ -1,0 +1,8 @@
+quantity,value
+grid,16x16x16x20
+tokens,81920
+window_tokens,256
+n_windows,320
+global_bytes,13421772800
+window_bytes,41943040
+reduction_factor,320.0

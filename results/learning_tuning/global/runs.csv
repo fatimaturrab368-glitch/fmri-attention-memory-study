@@ -1,0 +1,7 @@
+architecture,distance,seed,lr,params,best_step,val_acc,test_acc_all,test_acc_reachable,test_acc_unreachable,n_reachable_positions,n_unreachable_positions,train_time_s,peak_train_mem_mib,device
+global,1,100,0.0003,204676,4000,0.3157936632633209,0.3155857026576996,0.3155857026576996,nan,63,0,299.95,444.4,cuda
+global,1,100,0.001,204676,2750,1.0,1.0,1.0,nan,63,0,296.27,444.0,cuda
+global,1,100,0.003,204676,1000,1.0,1.0,1.0,nan,63,0,299.89,444.0,cuda
+global,8,100,0.0003,204676,6000,1.0,0.9999946355819702,0.9999946355819702,nan,56,0,298.43,444.0,cuda
+global,8,100,0.001,204676,4500,1.0,0.9999964237213135,0.9999964237213135,nan,56,0,297.77,444.0,cuda
+global,8,100,0.003,204676,1000,1.0,1.0,1.0,nan,56,0,300.9,444.0,cuda

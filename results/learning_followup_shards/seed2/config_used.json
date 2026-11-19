@@ -1,0 +1,43 @@
+{
+  "config": {
+    "description": "POST-HOC DIAGNOSTIC (not part of the pre-specified protocol). Question: are the shifted-window failures at d = 8, 9 (one seed each at 6,000 steps) a training-budget effect? Prediction stated before running: with 3x the budget every seed exceeds 0.9 test accuracy on reachable positions and stays at chance on unreachable ones. Same data, seeds, model and learning rate as configs/learning.json; only max_steps changes.",
+    "architectures": [
+      "shifted"
+    ],
+    "distances": [
+      8,
+      9
+    ],
+    "seeds": [
+      2
+    ],
+    "lr_per_arch": {
+      "shifted": 0.001
+    },
+    "figure_distance": 8,
+    "n_tokens": 64,
+    "vocab": 4,
+    "window": 4,
+    "shift": 2,
+    "depth": 4,
+    "d_model": 64,
+    "n_heads": 4,
+    "n_train": 20000,
+    "n_val": 2000,
+    "n_test": 10000,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "warmup_steps": 100,
+    "max_steps": 18000,
+    "eval_every": 250
+  },
+  "environment": {
+    "python": "3.12.8",
+    "torch": "2.5.1+cu121",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "deterministic_algorithms": true,
+    "started": "2026-11-19 15:28:01"
+  }
+}

@@ -1,0 +1,8 @@
+# Tested with Python 3.12.8, numpy 2.5.0, matplotlib 3.10.9, torch 2.5.1+cu121 (Windows 11).
+# The original study (run.py) and the reachability sweep (run_sweep.py) need only numpy + matplotlib.
+# The learning experiment, benchmark and tests/test_upgrade.py need PyTorch; install a CUDA build
+# from https://pytorch.org for GPU runs (the learning experiment also runs on CPU, slowly;
+# the benchmark requires a CUDA GPU). Tests use the standard-library unittest module.
+numpy>=1.24
+matplotlib>=3.7
+torch>=2.3
